@@ -5,9 +5,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 const HomeScreen = () => {
     return (
-        <View style = {{ padding: 10 }}>
-            <Text>Home</Text>
-            <Icon name = "add-circle-outline" size = {30} color = "#900" />
+        <View style = {{ padding: 15 }}>
+            <Text style = {{ fontSize: 32, fontWeight: 'bold' }}>Bienvenido</Text>
         </View>
     );
 };
