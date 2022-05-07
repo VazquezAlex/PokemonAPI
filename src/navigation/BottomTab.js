@@ -11,14 +11,11 @@ export const BottomTab = () => {
     
     return (
         <Tab.Navigator
-            screenOptions = { ({ route }) => ({
+            screenOptions = {{
                 tabBarActiveTintColor: 'red',
                 tabBarActiveBackgroundColor: 'grey',
                 tabBarInactiveBackgroundColor: 'orange',
-                tabBarIcon: () => {
-                    return <Icon name="plus-outline" size={30} color="#900" />;
-                }
-            })}
+            }}
         >
             <Tab.Screen name = 'Home' component = { HomeScreen } />
             <Tab.Screen name = 'Profile' component = { ProfileScreen } />
