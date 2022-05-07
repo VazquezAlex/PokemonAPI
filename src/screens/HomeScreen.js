@@ -7,7 +7,7 @@ const HomeScreen = () => {
     return (
         <View style = {{ padding: 10 }}>
             <Text>Home</Text>
-            <Icon name = "accessibility-outline" size = {30} color = "#900" />
+            <Icon name = "add-circle-outline" size = {30} color = "#900" />
         </View>
     );
 };
