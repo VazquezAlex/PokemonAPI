@@ -20,10 +20,13 @@ export const BottomTab = () => {
                     let iconName = '';
                     switch ( route.name ) {
                         case 'Home':
-                            iconName = 'home-outline';
+                            iconName = focused ? 'home' : 'home-outline';
                             break;
                         case 'Profile':
-                            iconName = 'person-circle-outline';
+                            iconName = focused ? 'person-circle' : 'person-circle-outline';
+                            break;
+                        case 'Settings':
+                            iconName = focused ? 'cog' : 'cog-outline';
                             break;
                     }
 
@@ -33,6 +36,7 @@ export const BottomTab = () => {
         >
             <Tab.Screen name = 'Home' component = { HomeScreen } />
             <Tab.Screen name = 'Profile' component = { ProfileScreen } />
+            <Tab.Screen name = 'Settings' component = { ProfileScreen } />
         </Tab.Navigator>
     );
 
